@@ -1,0 +1,179 @@
+# SponsoredSlots #
+
+
+slot:
+  '1':
+    type: PLACEHOLDER
+    slot:
+    - 0
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 17
+    - 18
+    - 19
+    - 20
+    - 21
+    - 23
+    - 24
+    - 25
+    - 26
+    display:
+      item: STAINED_GLASS_PANE
+      data: 15
+      name: §7
+      lore: []
+      setting:
+        glow: true
+  clock:
+    type: PLACEHOLDER
+    slot:
+    - 22
+    display:
+      item: WATCH
+      data: 0
+      name: §6§lSlot Information
+      lore:
+      - '&7Slot: &e%owned%'
+      - '&7Expires in &e%expired%'
+      setting:
+        glow: true
+  '2':
+    type: SLOT
+    slot:
+    - 11
+    setting:
+      period: 300
+      price: 100.0
+    display:
+      unclaimed:
+        item: PAPER
+        data: 0
+        name: '&6Unclaimed Slot'
+        lore:
+        - '&7Price: &6$%price%'
+        - '&7Period: &6%period%'
+        - ''
+        - '&eClick to claim!'
+        setting:
+          glow: false
+      claimed:
+        item: SKULL_ITEM
+        data: 3
+        name: '&6%player%''s Slot'
+        lore:
+        - '&7Message: &6%message%'
+        - '&7Time Left: &6%period%'
+        - '&7Command: &6/%command%'
+        - ''
+        - '&eClick to teleport to %player%''s Island!'
+        setting:
+          glow: true
+  '3':
+    type: SLOT
+    slot:
+    - 13
+    setting:
+      period: 300
+      expires: 0
+      price: 100.0
+    display:
+      unclaimed:
+        item: PAPER
+        data: 0
+        name: '&6Unclaimed Slot'
+        lore:
+        - '&7Price: &6$%price%'
+        - '&7Period: &6%period%'
+        - ''
+        - '&eClick to claim!'
+        setting:
+          glow: false
+      claimed:
+        item: SKULL_ITEM
+        data: 3
+        name: '&6%player%''s Slot'
+        lore:
+        - '&7Message: &6%message%'
+        - '&7Time Left: &6%period%'
+        - '&7Command: &6/%command%'
+        - ''
+        - '&eClick to teleport to %player%''s Island!'
+        setting:
+          glow: true
+  '4':
+    type: SLOT
+    slot:
+    - 15
+    setting:
+      period: 300
+      expires: 0
+      price: 100.0
+    display:
+      unclaimed:
+        item: PAPER
+        data: 0
+        name: '&6Unclaimed Slot'
+        lore:
+        - '&7Price: &6$%price%'
+        - '&7Period: &6%period%'
+        - ''
+        - '&eClick to claim!'
+        setting:
+          glow: false
+      claimed:
+        item: SKULL_ITEM
+        data: 3
+        name: '&6%player%''s Slot'
+        lore:
+        - '&7Message: &6%message%'
+        - '&7Time Left: &6%period%'
+        - '&7Command: &6/%command%'
+        - ''
+        - '&eClick to teleport to %player%''s Island!'
+        setting:
+          glow: true
+general:
+  gui:
+    title: Sponsored Islands
+    size: 27
+  announcer:
+    enabled: true
+    format:
+    - ''
+    - '&6[&e&lSlot&6] &fSponsor: &7%player%'
+    - '&8» &e%message%'
+    - ''
+    - '&8» &7Use &f/slot &7or &f/%command% &7to check it out!'
+    - ''
+    delay: 200
+  message:
+    prefix: '&6[&e&lSlot&6]'
+    opened: '%PREFIX% &7Viewing &6Sponsored GUI&7.'
+    purchased: '%PREFIX% &7Slot purchased for &6$%price% &7for &f%expire%&7.'
+    expired: '%PREFIX% &7Your slot has expired.'
+    message: '%PREFIX% &7Slot message set to &e%message%&7.'
+    teleported: '%PREFIX% &7Teleporting to &e%player%''s &7Sponsored Island.'
+    not-own: '%PREFIX% &7You do not own a slot.'
+    already-own: '%PREFIX% &7Please wait &6%expire% &7before purchasing another slot.'
+    no-permission: '%PREFIX% &7You require &e%permission% &7to do that.'
+    reload: '%PREFIX% &7Successfully Reloaded.'
+    not-enough: '%PREFIX% &7You cannot afford that slot.'
+    default-msg: Type /slot msg <message> to set!
+    default-cmd: is warp %player%
+    msg-in-chat: '%PREFIX% &7Type your message in chat.'
+    cmd-in-chat: '%PREFIX% &7Type your command in chat.'
+    command-set: '%PREFIX% &7Slot command set to &e/%command%&7.'
+    invalid-cmd: '%PREFIX% &7That command isn''t allowed. Please try another!'
+    invalid: "%PREFIX% &7That slot is invalid."
+    set: "%PREFIX% &7Slot &e%id% &7is now owned by &6%player%&7. &7Expires &c%expire%."
+
+command-filter:
+- 'is warp'
+- 'plot tp'

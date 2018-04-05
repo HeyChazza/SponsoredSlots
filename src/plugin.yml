@@ -1,0 +1,5 @@
+name: SponsoredSlots
+version: 2.1.4
+main: io.chazza.slots.Main
+description: "The #1 Sponsored Slot Plugin! Ultra Configurable & more!"
+softdepend: [Vault]
